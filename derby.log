@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Nov 27 23:53:31 BRT 2022:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.14.2.0 - (???): instância a816c00e-0184-bc27-6ee1-000006ee8920
+no diretório de banco de dados /home/luis/Documentos/UFU/BD2/JDBCTutorial/testdb 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_351-b10
+user.dir=/home/luis/Documentos/UFU/BD2/JDBCTutorial
+os.name=Linux
+os.arch=amd64
+os.version=5.15.0-53-generic
+derby.system.home=null
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''
