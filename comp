@@ -1,19 +1,20 @@
 #!/bin/sh -
 
 derby=/usr/share/java/derby.jar
+postgres=/home/luis/Documentos/UFU/BD2/JDBCTutorial/BD2-14-postgresql-42.2.4.jar
 mypath=/home/luis/Documentos/UFU/BD2/JDBCTutorial
 mypackage=com/oracle/tutorial/jdbc
 
 if [ -r $mypath/src/$mypackage/$1.java -a -r $mypath/$2 ]
 then
 
-	javac -cp "$derby:$mypath/classes:$mypath/lib/JDBCTutorial.jar" $mypath/src/$mypackage/$1.java
+	javac -cp "$postgres:$mypath/classes:$mypath/lib/JDBCTutorial.jar" $mypath/src/$mypackage/$1.java
 
 	if [ -r $mypath/src/$mypackage/$1.class ]
 	then
 		mv $mypath/src/$mypackage/$1.class $mypath/classes/$mypackage/
 
-		java -cp "$derby:$mypath/classes" $mypackage/$1  $mypath/$2
+		java -cp "$postgres:$mypath/classes" $mypackage/$1  $mypath/$2
 	fi
 else 
 	echo Missing file, check:

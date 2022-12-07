@@ -224,5 +224,11 @@
       </java>
   </target>
 
+  <target name="mycode2">
+    <java classname="com.oracle.tutorial.jdbc.MyQueries2"
+          classpathref="CLASSPATH" fork="true" dir=".">
+      <arg value="${PROPERTIESFILE}"/>
+    </java>
+  </target>
 
 </project>
