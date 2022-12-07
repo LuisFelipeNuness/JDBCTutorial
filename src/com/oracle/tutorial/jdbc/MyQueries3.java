@@ -15,6 +15,8 @@ public class MyQueries3 {
     this.settings = settingsArg;
   }
 
+  //test
+
   public static void getMyData(Connection con) throws SQLException {
     Statement stmt = null;
     String query =
